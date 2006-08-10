@@ -1,17 +1,22 @@
 #!/usr/bin/env python
 """
-Mikstape (C)2005 Ilkka Poutanen <if.iki@opi.backwards.invalid>
+Mikstape Copyright (C)2005 Ilkka Poutanen
+<if.iki@opi.backwards.invalid>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
 Get a random playlist from mikseri.net and download the files
 to the specified location (e.g. mp3 player).
-
-This program is published under the Creative Commons
-Attribution-ShareAlike License
-(http://creativecommons.org/licenses/by-sa/2.0/), meaning that you
-may distribute this file. You may also create derivative works
-and distribute them under the conditions that
-
- 1) the original author's name is mentioned and
- 2) you distribute them under this same license.
 """
 __author__ = "Ilkka Poutanen <if.iki@opi.backwards.invalid>"
 __date__ = "2005-03-17"
