@@ -19,8 +19,8 @@ Get a random playlist from mikseri.net and download the files
 to the specified location (e.g. mp3 player).
 """
 __author__ = "Ilkka Poutanen <if.iki@opi.backwards.invalid>"
-__date__ = "2005-03-17"
-__version__ = "0.4"
+__date__ = "2007-01-16"
+__version__ = "0.5"
 
 import os
 import sys
@@ -79,7 +79,7 @@ GENRE_KEYS = {
     'Muut':11
 }
 
-URLBASE = 'http://www.mikseri.net/www/makeplaylist.php'
+URLBASE = 'http://www.mikseri.net/music/generator.php?action=generate'
 
 # Option handling
 try:
@@ -150,7 +150,7 @@ if os.path.isdir(destination)==False:
 
 # build the GET request
 if (get_from_file == False):
-	urlparts = [URLBASE,'?limit=',str(count)]
+	urlparts = [URLBASE,'&limit=',str(count)]
 	for g in genres:
 		urlparts.append(''.join(['&genre[',str(g),']=1']))
 		url = ''.join(urlparts)
